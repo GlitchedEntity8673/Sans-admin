@@ -1,0 +1,98 @@
+
+
+
+local SansAdmin = Instance.new("ScreenGui")
+local Adminframe = Instance.new("Frame")
+local Arrow = Instance.new("TextLabel")
+local CmdBar = Instance.new("TextBox")
+local Run = Instance.new("TextButton")
+
+
+
+SansAdmin.Name = "Sans Admin"
+SansAdmin.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+SansAdmin.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+SansAdmin.ResetOnSpawn = false
+
+Adminframe.Name = "Admin frame"
+Adminframe.Parent = SansAdmin
+Adminframe.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+Adminframe.Position = UDim2.new(0.172582611, 0, 0.956714749, 0)
+Adminframe.Size = UDim2.new(0, 1069, 0, 19)
+
+Arrow.Name = "Arrow"
+Arrow.Parent = Adminframe
+Arrow.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+Arrow.BorderColor3 = Color3.fromRGB(60, 60, 60)
+Arrow.Position = UDim2.new(0.0383536071, 0, 0, 0)
+Arrow.Size = UDim2.new(0, 25, 0, 19)
+Arrow.Font = Enum.Font.SourceSans
+Arrow.Text = ">"
+Arrow.TextColor3 = Color3.fromRGB(252, 19, 7)
+Arrow.TextSize = 25.000
+
+CmdBar.Name = "Cmd Bar"
+CmdBar.Parent = Adminframe
+CmdBar.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+CmdBar.Position = UDim2.new(0.101964451, 0, 0, 0)
+CmdBar.Size = UDim2.new(0, 708, 0, 19)
+CmdBar.Font = Enum.Font.SourceSans
+CmdBar.Text = ""
+CmdBar.TextColor3 = Color3.fromRGB(0, 0, 0)
+CmdBar.TextSize = 14.000
+CmdBar.TextXAlignment = Enum.TextXAlignment.Left
+
+Run.Name = "Run"
+Run.Parent = Adminframe
+Run.BackgroundColor3 = Color3.fromRGB(108, 108, 108)
+Run.Position = UDim2.new(0.833489239, 0, 0, 0)
+Run.Size = UDim2.new(0, 115, 0, 19)
+Run.Font = Enum.Font.SourceSans
+Run.Text = "Run"
+Run.TextColor3 = Color3.fromRGB(0, 0, 0)
+Run.TextSize = 25.000
+Run.MouseButton1Down:connect(function()
+	if CmdBar.Text == "gui" then
+		loadstring(game:HttpGet(('https://pastebin.com/raw/AzXG5Wc4'),true))()
+	elseif CmdBar.Text == "iy" then
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+	elseif CmdBar.Text == "reviz" then
+		loadstring(game:HttpGet(('https://pastebin.com/raw/Nf130kwA'),true))()
+	elseif CmdBar.Text == "shattervast" then
+		loadstring(game:HttpGet(('https://pastebin.com/raw/6mb0WN91'),true))()
+	elseif CmdBar.Text == "dtv" then
+		loadstring(game:HttpGet(('https://pastebin.com/raw/Xigb3Kc7'),true))()
+	elseif CmdBar.Text == "yeet" then
+		loadstring(game:HttpGet(('https://pastebin.com/raw/pA6xTBXt'),true))()
+	elseif CmdBar.Text == "fling" then
+		loadstring(game:HttpGet(('https://pastebin.com/raw/zHxNWgY7'),true))()
+	elseif CmdBar.Text == "opfinality" then
+		loadstring(game:HttpGet(('https://pastebin.com/raw/9UtBscMx'),true))()
+	elseif CmdBar.Text == "dex" then
+		loadstring(game:HttpGet(('https://pastebin.com/raw/Ht4zRXj8'),true))()
+	elseif CmdBar.Text == "fly" then
+		loadstring(game:HttpGet(('https://pastebin.com/raw/CfaSpNqA'),true))()
+	elseif CmdBar.Text == "cypherx" then
+		loadstring(game:HttpGet(('https://pastebin.com/raw/DGmtEdFb'),true))()
+	elseif CmdBar.Text == "aspecthub" then
+		loadstring(game:HttpGet(('https://pastebin.com/raw/VLMcG0f0'),true))()
+	elseif CmdBar.Text == "rosehub" then
+		loadstring(game:HttpGet(('https://pastebin.com/raw/F0Gr8XuL'),true))()
+	elseif CmdBar.Text == "auratus" then
+		loadstring(game:HttpGet("https://pastebin.com/raw/mtrRP1H1", true))()
+	elseif CmdBar.Text == "arosia" then
+		loadstring(game:HttpGet(('https://pastebin.com/raw/ErKL3maf'),true))()
+	elseif CmdBar.Text == "hypertotal" then
+		loadstring(game:HttpGet(('https://pastebin.com/raw/byyskDgA'),true))()
+	elseif CmdBar.Text == "chatlogs" then
+		loadstring(game:HttpGet("https://pastebin.com/raw/mUDdJKTX", true))()
+	elseif CmdBar.Text == "annoychat" then
+		loadstring(game:HttpGet(('https://pastebin.com/raw/iPqmprVK'),true))()
+	elseif CmdBar.Text == "owlhub" then
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))()
+	elseif CmdBar.Text == "close" then
+		Adminframe.Visible = false
+	else
+		print"Invalid Command! Please use a command that is in the script"
+	end
+end)
